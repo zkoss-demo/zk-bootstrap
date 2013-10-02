@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk>
+	<library-property>
+		<name>org.zkoss.zul.Button.mold</name>
+		<value>bs</value>
+	</library-property>
+	<library-property>
+		<name>org.zkoss.zul.Menupopup.mold</name>
+		<value>bs</value>
+	</library-property>
+	<library-property>
+		<name>org.zkoss.zkmax.zul.Navbar.mold</name>
+		<value>bs</value>
+	</library-property>
+	<library-property>
+		<name>org.zkoss.zul.Paging.mold</name>
+		<value>bs</value>
+	</library-property>
+	<library-property>
+		<name>org.zkoss.zul.Panel.mold</name>
+		<value>bs</value>
+	</library-property>
+</zk>

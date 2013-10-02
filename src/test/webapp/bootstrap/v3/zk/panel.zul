@@ -1,0 +1,86 @@
+<zk xmlns:w="client" xmlns:n="native">
+	
+<n:h3 id="panels-basic">Basic example</n:h3>
+<n:p><![CDATA[By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.]]></n:p>
+
+	<div class="bs-example">
+		<panel>
+			<panelchildren>Basic panel example</panelchildren>
+		</panel>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Basic panel example<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+
+<n:h3 id="panels-heading">Panel with heading</n:h3>
+
+	<div class="bs-example">
+		<panel title="Panel title">
+			<panelchildren>Panel content</panelchildren>
+		</panel>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span> title=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Panel title</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Panel content<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+
+<n:h3 id="panels-alternatives">Contextual alternatives</n:h3>
+<n:p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</n:p>
+	<div class="bs-example">
+		<panel title="Panel Default">
+			<panelchildren>Panel content</panelchildren>
+		</panel>
+	
+		<panel title="Panel Primary" sclass="panel-primary">
+			<panelchildren>Panel content</panelchildren>
+		</panel>
+	
+		<panel title="Panel Success" sclass="panel-success">
+			<panelchildren>Panel content</panelchildren>
+		</panel>
+	
+		<panel title="Panel Info" sclass="panel-info">
+			<panelchildren>Panel content</panelchildren>
+		</panel>
+	
+		<panel title="Panel Warning" sclass="panel-warning">
+			<panelchildren>Panel content</panelchildren>
+		</panel>
+	
+		<panel title="Panel Danger" sclass="panel-danger">
+			<panelchildren>Panel content</panelchildren>
+		</panel>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span> title=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Panel Default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Panel content<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span> title=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Panel Primary</span><span style='color:#2a00ff; '>"</span> sclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>panel-primary</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Panel content<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span> title=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Panel Success</span><span style='color:#2a00ff; '>"</span> sclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>panel-success</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Panel content<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span> title=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Panel Info</span><span style='color:#2a00ff; '>"</span> sclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>panel-info</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Panel content<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span> title=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Panel Warning</span><span style='color:#2a00ff; '>"</span> sclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>panel-warning</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Panel content<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panel</span> title=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Panel Danger</span><span style='color:#2a00ff; '>"</span> sclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>panel-danger</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>Panel content<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panelchildren</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>panel</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+	
+</zk>

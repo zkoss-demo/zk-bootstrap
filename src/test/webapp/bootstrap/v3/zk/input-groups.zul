@@ -1,0 +1,285 @@
+<zk xmlns:w="client" xmlns:n="native">
+	<menupopup id="m1">
+		<menuitem label="Action" />
+		<menuitem label="Another action" />
+		<menuitem label="Something else here" />
+		<menuseparator />
+		<menuitem label="Separated link" />
+	</menupopup>
+		
+<n:h3 id="input-groups-basic">Basic example</n:h3>
+	<div class="bs-example">
+		<vlayout spacing="25px">
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<textbox class="form-control" placeholder="Username" />
+			</div>
+	
+			<div class="input-group">
+				<textbox class="form-control" />
+				<span class="input-group-addon">.00</span>
+			</div>
+	
+			<div class="input-group">
+				<span class="input-group-addon">$</span>
+				<textbox class="form-control" />
+				<span class="input-group-addon">.00</span>
+			</div>
+		</vlayout>
+	</div>
+
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>@<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span> placeholder=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Username</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>.00<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>$<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>.00<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+	
+<n:h3 id="input-groups-sizing">Sizing</n:h3>
+<n:p><![CDATA[Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.]]></n:p>
+	<div class="bs-example">
+		<vlayout spacing="25px">
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon">@</span>
+				<textbox class="form-control input-lg" placeholder="Username" />
+			</div>
+			
+			<div class="input-group">
+				<span class="input-group-addon">@</span>
+				<textbox class="form-control" placeholder="Username" />
+			</div>
+			
+			<div class="input-group input-group-sm">
+				<span class="input-group-addon">@</span>
+				<textbox class="form-control input-sm" placeholder="Username" />
+			</div>
+		</vlayout>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group input-group-lg</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>@<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control input-lg</span><span style='color:#2a00ff; '>"</span> placeholder=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Username</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>@<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span> placeholder=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Username</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group input-group-sm</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>@<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control input-sm</span><span style='color:#2a00ff; '>"</span> placeholder=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Username</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+	
+<n:h3 id="input-groups-checkboxes-radios">Checkboxes and radio addons</n:h3>
+<n:p>Place any checkbox or radio option within an input group's addon instead of text.</n:p>
+	<div class="bs-example">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<checkbox class="input-group-addon" />
+					<textbox class="form-control" />
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="input-group">
+					<radio class="input-group-addon" />
+					<textbox class="form-control" />
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+	</div>
+
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>row</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>checkbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>radio</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-addon</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.row </span><span style='color:#3f7f59; '>--></span>]]></n:pre>
+	</div>
+	
+<n:h3 id="input-groups-buttons">Button addons</n:h3>
+<n:p><![CDATA[Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon</code>, you'll need to use <code>.input-group-btn</code> to wrap the buttons. This is required due to default browser styles that cannot be overridden.]]></n:p>
+	<div class="bs-example">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button>
+							Go!
+						</button>
+					</span>
+					<textbox class="form-control"/>
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="input-group">
+					<textbox class="form-control"/>
+					<span class="input-group-btn">
+						<button>
+							Go!
+						</button>
+					</span>
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>row</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-btn</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+					Go!
+				<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-btn</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+					Go!
+				<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.row </span><span style='color:#3f7f59; '>--></span>]]></n:pre>
+	</div>
+	
+<n:h3 id="input-groups-buttons-dropdowns">Buttons with dropdowns</n:h3>
+	<div class="bs-example">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button dir="reverse" class="btn-default dropdown-toggle"
+							popup="m1, after_start" iconSclass="caret">
+							Action
+						</button>
+					</span>
+					<textbox class="form-control"/>
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="input-group">
+					<textbox class="form-control"/>
+					<span class="input-group-btn">
+						<button dir="reverse" class="btn-default dropdown-toggle"
+							popup="m1, after_end" iconSclass="caret">
+							Action
+						</button>
+					</span>
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>row</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-btn</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+					popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, after_start</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+					Action
+				<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-btn</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+					popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, after_end</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+					Action
+				<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.row </span><span style='color:#3f7f59; '>--></span>]]></n:pre>
+	</div>
+	
+<n:h3 id="input-groups-buttons-segmented">Segmented buttons</n:h3>
+	<div class="bs-example">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button>Action</button>
+						<button class="btn-default dropdown-toggle" iconSclass="caret"
+							onClick='m1.open(self.previousSibling, "after_start")'>
+						</button>
+					</span>
+					<textbox class="form-control"/>
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<div class="input-group">
+					<textbox class="form-control"/>
+					<span class="input-group-btn">
+						<button>Action</button>
+						<button class="btn-default dropdown-toggle" iconSclass="caret"
+							popup="m1, after_end">
+						</button>
+					</span>
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>row</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-btn</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>Action<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default dropdown-toggle</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span>
+					onClick=<span style='color:#2a00ff; '>'</span><span style='color:#2a00ff; '>m1.open(self.previousSibling, "after_start")</span><span style='color:#2a00ff; '>'</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>col-lg-6</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>textbox</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>form-control</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>input-group-btn</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>Action<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default dropdown-toggle</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span>
+					popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, after_end</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+				<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /input-group </span><span style='color:#3f7f59; '>--></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.col-lg-6 </span><span style='color:#3f7f59; '>--></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span><span style='color:#3f7f59; '>&lt;!--</span><span style='color:#3f7f59; '> /.row </span><span style='color:#3f7f59; '>--></span>]]></n:pre>
+	</div>
+	
+</zk>

@@ -1,0 +1,78 @@
+<zk xmlns:w="client" xmlns:n="native">
+	<div class="bs-example">
+		<a href="#"> 
+		Inbox <label class="badge">42</label>
+		</a>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>a</span> href=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>#</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span> 
+Inbox <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>badge</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>42<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>a</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+	
+	<n:h4>Adapts to active nav states</n:h4>
+	<n:p>Built-in styles are included for placing badges in active states in pill and list navigations.</n:p>
+	
+	<div class="bs-example">	
+		<navbar mold="bs-pills">
+			<navitem label="Home " selected="true">
+				<attribute name="content">
+					<span class="badge">42</span>
+				</attribute>
+			</navitem>
+			<navitem label="Profile" />
+			<navitem label="Messages ">
+				<attribute name="content">
+					<span class="badge">3</span>
+				</attribute>
+			</navitem>
+		</navbar>
+		<separator spacing="20px"/>
+		<navbar mold="bs-pills" orient="vertical" width="260px">
+			<navitem label="Home " selected="true">
+				<attribute name="content">
+					<span class="badge pull-right">42</span>
+				</attribute>
+			</navitem>
+			<navitem label="Profile" />
+			<navitem label="Messages ">
+				<attribute name="content">
+					<span class="badge pull-right">3</span>
+				</attribute>
+			</navitem>
+		</navbar>
+    </div>
+    
+    
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-pills</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home </span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>attribute</span> name=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>content</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>badge</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>42<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>attribute</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navitem</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Profile</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Messages </span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>attribute</span> name=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>content</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>badge</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>3<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>attribute</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navitem</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>separator</span> spacing=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>20px</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-pills</span><span style='color:#2a00ff; '>"</span> orient=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>vertical</span><span style='color:#2a00ff; '>"</span> width=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>260px</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home </span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>attribute</span> name=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>content</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>badge pull-right</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>42<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>attribute</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navitem</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Profile</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Messages </span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>attribute</span> name=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>content</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>span</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>badge pull-right</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>3<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>span</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>attribute</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navitem</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+</zk>

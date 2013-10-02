@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language-addon>
+	<!-- The name of this addon. It must be unique -->
+	<addon-name>zk-bootstrap</addon-name>
+	<!-- Specifies what other addon this depends-->
+	<depends>zkmax</depends>
+
+	<!-- Which language this addon will be added to -->
+	<language-name>xul/html</language-name>
+
+	<version>
+		<version-class>org.zkoss.zkmax.Version</version-class>
+		<version-uid>7.0.0</version-uid>
+		<zk-version>7.0.0</zk-version><!-- or later -->
+	</version>
+
+	<javascript package="bootstrap"/>
+	
+	<stylesheet href="~./js/bootstrap/ext/css/bootstrap.min.css" type="text/css"/>
+
+	<component>
+		<component-name>button</component-name>
+		<extends>button</extends>
+		<mold>
+			<mold-name>bs</mold-name>
+		</mold>
+	</component>
+
+	<component>
+		<component-name>menupopup</component-name>
+		<extends>menupopup</extends>
+		<mold>
+			<mold-name>bs</mold-name>
+		</mold>
+	</component>
+
+	<component>
+		<component-name>navbar</component-name>
+		<extends>navbar</extends>
+		<mold>
+			<mold-name>bs</mold-name>
+		</mold>
+		<mold>
+			<mold-name>bs-pills</mold-name>
+		</mold>
+		<mold>
+			<mold-name>bs-tabs</mold-name>
+		</mold>
+	</component>
+
+	<component>
+		<component-name>paging</component-name>
+		<extends>paging</extends>
+		<mold>
+			<mold-name>bs</mold-name>
+		</mold>
+	</component>
+
+	<component>
+		<component-name>panel</component-name>
+		<extends>panel</extends>
+		<mold>
+			<mold-name>bs</mold-name>
+		</mold>
+	</component>
+
+</language-addon>

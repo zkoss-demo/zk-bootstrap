@@ -1,0 +1,5 @@
+<zk>
+	<window title="Hello World!!" border="normal" width="300px"
+		apply="test.ctrl.DemoWindowComposer">
+	</window>
+</zk>

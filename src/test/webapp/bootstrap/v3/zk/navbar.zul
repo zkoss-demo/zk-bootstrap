@@ -1,0 +1,64 @@
+<zk xmlns:w="client" xmlns:n="native">
+
+<n:h3 id="navbar-default">Default navbar</n:h3>
+<n:p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</n:p>
+
+<div class="bs-example">
+	<navbar>
+		<navitem label="Link" selected="true" />
+		<navitem label="Link" />
+		<nav label="Dropdown">
+			<navitem label="Action" />
+			<navitem label="Another action" />
+			<navitem label="Something else here" />
+			<navitem label="Separated link" />
+			<navitem label="One more separated link" />
+		</nav>
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Link</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>nav</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Dropdown</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Another action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Something else here</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>One more separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>nav</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+<n:h3 id="navbar-inverted">Inverted navbar</n:h3>
+<n:p><![CDATA[Modify the look of the navbar by adding <code>.navbar-inverse</code>.]]></n:p>
+	<div class="bs-example">
+		<navbar class="navbar-inverse">
+			<navitem label="Link" selected="true" />
+			<navitem label="Link" />
+			<nav label="Dropdown">
+				<navitem label="Action" />
+				<navitem label="Another action" />
+				<navitem label="Something else here" />
+				<navitem label="Separated link" />
+				<navitem label="One more separated link" />
+			</nav>
+		</navbar>
+	</div>
+	
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>navbar-inverse</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Link</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>nav</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Dropdown</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Another action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Something else here</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>One more separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>nav</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+</zk>
+

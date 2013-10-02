@@ -1,0 +1,59 @@
+<zk xmlns:w="client" xmlns:n="native">
+
+<n:h3>Example</n:h3>
+	<div class="bs-example">
+      <n:h1>
+      	Example heading
+      	<label class="label label-default">New</label>
+      </n:h1>
+      <n:h2>
+      	Example heading
+      	<label class="label label-default">New</label>
+      </n:h2>
+      <n:h3>
+      	Example heading
+      	<label class="label label-default">New</label>
+      </n:h3>
+      <n:h4>
+      	Example heading
+      	<label class="label label-default">New</label>
+      </n:h4>
+      <n:h5>
+      	Example heading
+      	<label class="label label-default">New</label>
+      </n:h5>
+      <n:h6>
+      	Example heading
+      	<label class="label label-default">New</label>
+      </n:h6>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h1</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h1</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h2</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h2</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h3</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h3</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h4</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h4</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h5</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h5</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h6</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h6</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+	
+<n:h3>Available variations</n:h3>
+<n:p>Add any of the below mentioned modifier classes to change the appearance of a label.</n:p>
+	<div class="bs-example">
+		<label class="label label-default">Default</label>
+		<label class="label label-primary">Primary</label>
+		<label class="label label-success">Success</label>
+		<label class="label label-info">Info</label>
+		<label class="label label-warning">Warning</label>
+		<label class="label label-danger">Danger</label>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h1</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h1</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h2</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h2</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h3</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h3</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h4</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h4</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h5</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h5</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span>n:<span style='color:#7f0055; '>h6</span><span style='color:#7f0055; '>></span>Example heading <span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>label</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>label label-default</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>New<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>label</span><span style='color:#7f0055; '>></span><span style='color:#7f0055; '>&lt;/</span>n:<span style='color:#7f0055; '>h6</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+</zk>

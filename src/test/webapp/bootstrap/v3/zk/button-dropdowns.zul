@@ -1,0 +1,212 @@
+<zk xmlns:w="client" xmlns:n="native">
+	<menupopup id="m1">
+		<menuitem label="Action" />
+		<menuitem label="Another action" />
+		<menuitem label="Something else here" />
+		<menuseparator />
+		<menuitem label="Separated link" />
+	</menupopup>
+	
+<n:h3 id="btn-dropdowns-single">Single button dropdowns</n:h3>
+<n:p>Turn a button into a dropdown toggle with some basic markup changes.</n:p>
+	<div class="bs-example">
+		<div class="btn-group">
+			<button dir="reverse" class="btn-default dropdown-toggle"
+				popup="m1, after_start" iconSclass="caret">
+				Default
+			</button>
+		</div>
+		<div class="btn-group">
+			<button dir="reverse" class="btn-primary dropdown-toggle"
+				popup="m1, after_start" iconSclass="caret">
+				Primary
+			</button>
+		</div>
+		<div class="btn-group">
+			<button dir="reverse" class="btn-success dropdown-toggle"
+				popup="m1, after_start" iconSclass="caret">
+				Success
+			</button>
+		</div>
+		<div class="btn-group">
+			<button dir="reverse" class="btn-info dropdown-toggle"
+				popup="m1, after_start" iconSclass="caret">
+				Info
+			</button>
+		</div>
+		<div class="btn-group">
+			<button dir="reverse" class="btn-warning dropdown-toggle"
+				popup="m1, after_start" iconSclass="caret">
+				Warning
+			</button>
+		</div>
+		<div class="btn-group">
+			<button dir="reverse" class="btn-danger dropdown-toggle"
+				popup="m1, after_start" iconSclass="caret">
+				Danger
+			</button>
+		</div>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menupopup</span> id=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Another action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Something else here</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuseparator</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>menupopup</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+		popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, after_start</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		Action
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+	
+	
+<n:h3 id="btn-dropdowns-split">Split button dropdowns</n:h3>
+	<div class="bs-example">
+		<div class="btn-group">
+			<button>Default</button>
+			<button class="btn-default dropdown-toggle" iconSclass="caret"
+				onClick='m1.open(self.previousSibling, "after_start")'>
+			</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn-primary">Primary</button>
+			<button class="btn-primary dropdown-toggle" iconSclass="caret"
+				onClick='m1.open(self.previousSibling, "after_start")'>
+			</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn-success">Success</button>
+			<button class="btn-success dropdown-toggle" iconSclass="caret"
+				onClick='m1.open(self.previousSibling, "after_start")'>
+			</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn-info">Info</button>
+			<button class="btn-info dropdown-toggle" iconSclass="caret"
+				onClick='m1.open(self.previousSibling, "after_start")'>
+			</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn-warning">Warning</button>
+			<button class="btn-warning dropdown-toggle" iconSclass="caret"
+				onClick='m1.open(self.previousSibling, "after_start")'>
+			</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn-danger">Danger</button>
+			<button class="btn-danger dropdown-toggle" iconSclass="caret"
+				onClick='m1.open(self.previousSibling, "after_start")'>
+			</button>
+		</div>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menupopup</span> id=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Another action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Something else here</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuseparator</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>menuitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>menupopup</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>Action<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default dropdown-toggle</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span>
+		onClick=<span style='color:#2a00ff; '>'</span><span style='color:#2a00ff; '>m1.open(self.previousSibling, "after_start")</span><span style='color:#2a00ff; '>'</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>	
+	
+<n:h3 id="btn-dropdowns-sizing">Sizing</n:h3>
+<n:p>Button dropdowns work with buttons of all sizes.</n:p>
+	<div class="bs-example">	
+		<vlayout>
+			<div class="btn-group">
+				<button dir="reverse" class="btn-default btn-lg dropdown-toggle"
+					popup="m1, after_start" iconSclass="caret">
+					Large button
+				</button>
+			</div>
+	
+			<div class="btn-group ">
+				<button dir="reverse" class="btn-default btn-sm dropdown-toggle"
+					popup="m1, after_start" iconSclass="caret">
+					Small button
+				</button>
+			</div>
+			
+			
+			<div class="btn-group">
+				<button dir="reverse" class="btn-default btn-xs dropdown-toggle"
+					popup="m1, after_start" iconSclass="caret">
+					Extra small button
+				</button>
+			</div>
+		</vlayout>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>vlayout</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default btn-lg dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+			popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, after_start</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			Large button
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+	
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-group </span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default btn-sm dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+			popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, after_start</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			Small button
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+	
+	
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-group</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default btn-xs dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+			popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, after_start</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+			Extra small button
+		<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>vlayout</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+	
+<n:h3 id="btn-dropdowns-dropup">Dropup variation</n:h3>
+<n:p><![CDATA[Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent.]]></n:p>
+	<div class="bs-example">
+		<div class="btn-group dropup">
+			<button>Dropup</button>
+			<button dir="reverse" class="btn-default dropdown-toggle"
+				onClick='m1.open(self.previousSibling, "before_start")' iconSclass="caret">
+			</button>
+		</div>
+		
+		<div class="btn-group dropup">
+			<button class="btn-primary">Right dropup</button>
+			<button dir="reverse" class="btn-primary dropdown-toggle"
+				popup="m1, before_end" iconSclass="caret">
+			</button>
+		</div>
+	</div>
+	
+	<div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-group dropup</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>Dropup<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-default dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+		onClick=<span style='color:#2a00ff; '>'</span><span style='color:#2a00ff; '>m1.open(self.previousSibling, "before_start")</span><span style='color:#2a00ff; '>'</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>
+
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>div</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-group dropup</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-primary</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>Right dropup<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>button</span> dir=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>reverse</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>btn-primary dropdown-toggle</span><span style='color:#2a00ff; '>"</span>
+		popup=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>m1, before_end</span><span style='color:#2a00ff; '>"</span> iconSclass=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>caret</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>button</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>div</span><span style='color:#7f0055; '>></span>]]></n:pre>
+	</div>
+
+</zk>

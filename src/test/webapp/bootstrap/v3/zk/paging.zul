@@ -1,0 +1,38 @@
+<zk xmlns:w="client" xmlns:n="native">
+
+<n:h3 id="pagination-default">Default pagination</n:h3>
+
+	<div class="bs-example">
+		<paging totalSize="100" />
+    </div>
+		
+    <div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>paging</span> totalSize=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>100</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>]]></n:pre>
+	</div>
+	
+	
+<n:h3>Active states</n:h3>
+	<div class="bs-example">
+		<paging totalSize="100" activePage="3"/>
+    </div>
+		
+    <div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>paging</span> totalSize=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>100</span><span style='color:#2a00ff; '>"</span> activePage=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>3</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>]]></n:pre>
+	</div>
+  
+ <n:h3>Sizing</n:h3>
+ <n:p><![CDATA[Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.]]></n:p>
+ 
+	<div class="bs-example">
+		<paging totalSize="100" class="pagination-lg"/>
+		<paging totalSize="100"/>
+		<paging totalSize="100" class="pagination-sm"/>
+    </div>
+		
+    <div class="highlight">
+	<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>paging</span> totalSize=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>100</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>pagination-lg</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>paging</span> totalSize=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>100</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>paging</span> totalSize=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>100</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>pagination-sm</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>]]></n:pre>
+	</div>
+ 
+</zk>

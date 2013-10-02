@@ -1,0 +1,33 @@
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+	<id>src</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<directory>${project.basedir}</directory>
+			<excludes>
+				<exclude>${project.build.directory}/</exclude>
+			</excludes>
+			<outputDirectory>/${project.artifactId}</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>${project.build.directory}/${project.artifactId}-${version}-sources.jar</source>
+			<destName>${project.artifactId}-sources.jar</destName>
+			<outputDirectory>/dist/src</outputDirectory>
+		</file>
+		<file>
+			<source>${project.basedir}/zkdoc/COPYING</source>
+			<outputDirectory>/doc</outputDirectory>
+		</file>
+		<file>
+			<source>${project.basedir}/zkdoc/release-note</source>
+			<outputDirectory>/doc</outputDirectory>
+		</file>
+	</files>
+</assembly>

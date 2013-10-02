@@ -1,0 +1,171 @@
+<zk xmlns:w="client" xmlns:n="native">
+	
+<n:h3 id="nav-bs-tabs">bs-tabs</n:h3>
+<n:p><![CDATA[Note the <code>.nav-bs-tabs</code> class requires the <code>.nav</code> base class.]]></n:p>
+
+<div class="bs-example">
+	<navbar mold="bs-tabs">
+		<navitem label="Home" selected="true" />
+		<navitem label="Profile" />
+		<navitem label="Messages" />
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-tabs</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Profile</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Messages</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+<n:h3 id="nav-bs-pills">bs-pills</n:h3>
+<n:p><![CDATA[Take that same HTML, but use <code>.nav-bs-pills</code> instead:]]></n:p>
+
+<div class="bs-example">
+	<navbar mold="bs-pills">
+		<navitem label="Home" selected="true" />
+		<navitem label="Profile" />
+		<navitem label="Messages" />
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-pills</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Profile</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Messages</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+<n:p><![CDATA[bs-pills are also vertically stackable. Just add <code>orient="vertical"</code>.]]></n:p>
+
+
+<div class="bs-example">
+	<navbar mold="bs-pills" orient="vertical">
+		<navitem label="Home" selected="true" />
+		<navitem label="Profile" />
+		<navitem label="Messages" />
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-pills</span><span style='color:#2a00ff; '>"</span> orient=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>vertical</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Profile</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Messages</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+<n:h3 id="nav-justified">Justified</n:h3>
+<n:p><![CDATA[Easily make bs-tabs or bs-pills equal widths of their parent with <code>.nav-justified</code>.]]></n:p>
+
+<div class="bs-example">
+	<navbar mold="bs-tabs" class="nav-justified">
+		<navitem label="Home" selected="true" />
+		<navitem label="Profile" />
+		<navitem label="Messages" />
+	</navbar>
+	<separator spacing="20px"/>
+	<navbar mold="bs-pills" class="nav-justified">
+		<navitem label="Home" selected="true" />
+		<navitem label="Profile" />
+		<navitem label="Messages" />
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-tabs</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>nav-justified</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Profile</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Messages</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>separator</span> spacing=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>20px</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-pills</span><span style='color:#2a00ff; '>"</span> class=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>nav-justified</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Profile</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Messages</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+<n:h3 id="nav-disabled-links">Disabled links</n:h3>
+<n:p><![CDATA[For any nav component (bs-tabs, bs-pills, or list), add <code>disabled="true"</code> for <strong>gray links and no hover effects</strong>.]]></n:p>
+
+<div class="bs-example">
+	<navbar mold="bs-pills">
+		<navitem label="Clickable link"/>
+		<navitem label="Clickable link" />
+		<navitem label="Disabled link" disabled="true" />
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-pills</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Clickable link</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Clickable link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Disabled link</span><span style='color:#2a00ff; '>"</span> disabled=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+<n:h2 id="nav-dropdowns">Using dropdowns</n:h2>
+<n:h3>bs-tabs with dropdowns</n:h3>
+<div class="bs-example">
+	<navbar mold="bs-tabs">
+		<navitem label="Home" selected="true" />
+		<navitem label="Help" />
+		<nav label="Dropdown">
+			<navitem label="Action" />
+			<navitem label="Another action" />
+			<navitem label="Something else here" />
+			<navitem label="Separated link" />
+			<navitem label="One more separated link" />
+		</nav>
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-tabs</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Help</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>nav</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Dropdown</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Another action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Something else here</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>One more separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>nav</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+
+<n:h3>bs-pills with dropdowns</n:h3>
+<div class="bs-example">
+	<navbar mold="bs-pills">
+		<navitem label="Home" selected="true" />
+		<navitem label="Help" />
+		<nav label="Dropdown">
+			<navitem label="Action" />
+			<navitem label="Another action" />
+			<navitem label="Something else here" />
+			<navitem label="Separated link" />
+			<navitem label="One more separated link" />
+		</nav>
+	</navbar>
+</div>
+
+	<div class="highlight">
+<n:pre style="white-space:pre;"><![CDATA[<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navbar</span> mold=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>bs-pills</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Home</span><span style='color:#2a00ff; '>"</span> selected=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>true</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Help</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>nav</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Dropdown</span><span style='color:#2a00ff; '>"</span><span style='color:#7f0055; '>></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Another action</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Something else here</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>Separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+		<span style='color:#7f0055; '>&lt;</span><span style='color:#7f0055; '>navitem</span> label=<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>One more separated link</span><span style='color:#2a00ff; '>"</span> <span style='color:#7f0055; '>/></span>
+	<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>nav</span><span style='color:#7f0055; '>></span>
+<span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
+</div>
+
+</zk>
+

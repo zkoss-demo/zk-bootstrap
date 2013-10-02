@@ -1,0 +1,10 @@
+<package name="bootstrap" language="xul/html">
+	<!-- Bootstrap version 3.0.0 -->
+	<script src="ext/js/bootstrap.min.js"/>
+
+	<script src="button.js"/>
+	<script src="menupopup.js"/>
+	<script src="navbar.js"/>
+	<script src="paging.js"/>
+	<script src="panel.js"/>
+</package>
