@@ -42,7 +42,7 @@ zk.override(zkmax.nav.Navbar.prototype, _navbar, {
 		var sc = _navbar.domClass_.apply(this, arguments);
 		if (this._inBSMold()) {
 			if (!no || !no.sclass)
-				sc += ' ' +  (this.getMold() == 'bs' ? (this._sclass != null ? '' : 'navbar-default') : 'nav-' + this.getMold());
+				sc += ' ' +  (this.getMold() == 'bs' ? (this._sclass != null ? '' : 'navbar-default') : 'nav-' + (this.getMold().substring(3)));
 		}
 		return sc;
 	},

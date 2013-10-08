@@ -1,7 +1,7 @@
 <zk xmlns:w="client" xmlns:n="native">
 	
-<n:h3 id="nav-bs-tabs">bs-tabs</n:h3>
-<n:p><![CDATA[Note the <code>.nav-bs-tabs</code> class requires the <code>.nav</code> base class.]]></n:p>
+<n:h3 id="nav-tabs">Tabs</n:h3>
+<n:p><![CDATA[Note the <code>bs-tabs</code> mold required.]]></n:p>
 
 <div class="bs-example">
 	<navbar mold="bs-tabs">
@@ -19,8 +19,8 @@
 <span style='color:#7f0055; '>&lt;/</span><span style='color:#7f0055; '>navbar</span><span style='color:#7f0055; '>></span>]]></n:pre>
 </div>
 
-<n:h3 id="nav-bs-pills">bs-pills</n:h3>
-<n:p><![CDATA[Take that same HTML, but use <code>.nav-bs-pills</code> instead:]]></n:p>
+<n:h3 id="nav-pills">Pills</n:h3>
+<n:p><![CDATA[Take that same ZUL, but use <code>bs-pills</code> mold instead:]]></n:p>
 
 <div class="bs-example">
 	<navbar mold="bs-pills">
@@ -58,7 +58,7 @@
 </div>
 
 <n:h3 id="nav-justified">Justified</n:h3>
-<n:p><![CDATA[Easily make bs-tabs or bs-pills equal widths of their parent with <code>.nav-justified</code>.]]></n:p>
+<n:p><![CDATA[Easily make tabs or pills equal widths of their parent with <code>.nav-justified</code>.]]></n:p>
 
 <div class="bs-example">
 	<navbar mold="bs-tabs" class="nav-justified">
@@ -89,7 +89,7 @@
 </div>
 
 <n:h3 id="nav-disabled-links">Disabled links</n:h3>
-<n:p><![CDATA[For any nav component (bs-tabs, bs-pills, or list), add <code>disabled="true"</code> for <strong>gray links and no hover effects</strong>.]]></n:p>
+<n:p><![CDATA[For any navbar component (tabs or pills), add <code>disabled="true"</code> for <strong>gray links and no hover effects</strong>.]]></n:p>
 
 <div class="bs-example">
 	<navbar mold="bs-pills">
@@ -108,7 +108,7 @@
 </div>
 
 <n:h2 id="nav-dropdowns">Using dropdowns</n:h2>
-<n:h3>bs-tabs with dropdowns</n:h3>
+<n:h3>tabs with dropdowns</n:h3>
 <div class="bs-example">
 	<navbar mold="bs-tabs">
 		<navitem label="Home" selected="true" />
