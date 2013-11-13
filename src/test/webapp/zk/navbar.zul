@@ -1,8 +1,6 @@
 <zk xmlns:w="client" xmlns:n="native">
 
 <n:h3 id="navbar-default">Default navbar</n:h3>
-<n:p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</n:p>
-
 <div class="bs-example">
 	<navbar>
 		<navitem label="Link" selected="true" />
