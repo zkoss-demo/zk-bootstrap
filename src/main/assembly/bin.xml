@@ -24,6 +24,11 @@
 			<outputDirectory>/dist/src</outputDirectory>
 		</file>
 		<file>
+			<source>${project.build.directory}/${project.artifactId}-${version}.war</source>
+			<destName>${project.artifactId}.war</destName>
+			<outputDirectory>/dist/war</outputDirectory>
+		</file>
+		<file>
 			<source>${project.basedir}/zkdoc/COPYING</source>
 			<outputDirectory>/doc</outputDirectory>
 		</file>

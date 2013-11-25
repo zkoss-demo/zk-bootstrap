@@ -18,7 +18,7 @@
 	</fileSets>
 	<files>
 		<file>
-			<source>${project.build.directory}/${project.artifactId}.war</source>
+			<source>${project.build.directory}/${project.artifactId}-${version}.war</source>
 			<outputDirectory>/</outputDirectory>
 		</file>
 	</files>
