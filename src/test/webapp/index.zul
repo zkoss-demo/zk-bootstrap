@@ -12,11 +12,11 @@
   <div class="container">
   	<a href="" class="navbar-brand">ZK 7 with Bootstrap 3</a>
     <navbar zclass="none" sclass="navbar-collapse">
-    	<navitem label="Getting started"/>
-    	<navitem label="CSS"/>
+    	<navitem label="Getting started" onClick='Clients.showNotification("Not implemented yet")'/>
+    	<navitem label="CSS" onClick='Clients.showNotification("Not implemented yet")'/>
     	<navitem label="Components" selected="true"/>
-    	<navitem label="JavaScript"/>
-    	<navitem label="Customize"/>
+    	<navitem label="JavaScript" onClick='Clients.showNotification("Not implemented yet")'/>
+    	<navitem label="Customize" onClick='Clients.showNotification("Not implemented yet")'/>
     	<nav label="Themes">
     		<navitem label="Default" onClick='Executions.sendRedirect("?theme=default")'/>
     		<navitem label="Amelia" onClick='Executions.sendRedirect("?theme=amelia")'/>

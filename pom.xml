@@ -5,7 +5,7 @@
 	<artifactId>zk-bootstrap</artifactId>
 	<version>0.8.0-SNAPSHOT</version>
 	<properties>
-		<zk.version>7.0.0-SNAPSHOT</zk.version>
+		<zk.version>7.0.0.FL.20131112</zk.version>
 		<commons-io>1.3.1</commons-io>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
@@ -167,7 +167,7 @@
 							<encoding>UTF-8</encoding>
 							<charset>UTF-8</charset>
 							<reportOutputDirectory>${project.basedir}/target/javadoc</reportOutputDirectory>
-							<destDir>bootstrap</destDir>
+							<destDir>zk-bootstrap</destDir>
 							<show>protected</show>
 						</configuration>
 						<goals>
@@ -175,6 +175,15 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<!-- Build war -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>${project.basedir}/src/test/webapp</warSourceDirectory>
+				</configuration>
 			</plugin>
 			<!-- Pack zips -->
 			<plugin>
@@ -204,6 +213,21 @@
 						<configuration>
 							<descriptors>
 								<descriptor>src/main/assembly/javadoc.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+					<!-- Build war -->
+					<execution>
+						<id>webapp</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>${project.artifactId}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<descriptors>
+								<descriptor>src/main/assembly/webapp.xml</descriptor>
 							</descriptors>
 						</configuration>
 					</execution>
