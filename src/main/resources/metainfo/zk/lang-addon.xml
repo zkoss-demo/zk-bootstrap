@@ -4,14 +4,14 @@
 	<!-- The name of this addon. It must be unique -->
 	<addon-name>zk-bootstrap</addon-name>
 	<!-- Specifies what other addon this depends-->
-	<depends>zkmax</depends>
+	<depends>zkbind,zkex,zkmax</depends>
 
 	<!-- Which language this addon will be added to -->
 	<language-name>xul/html</language-name>
 
 	<version>
-		<version-class>org.zkoss.zkmax.Version</version-class>
-		<version-uid>7.0.0</version-uid>
+		<version-class>org.zkoss.addons.bootstrap.Version</version-class>
+		<version-uid>1.0.0</version-uid>
 		<zk-version>7.0.0</zk-version><!-- or later -->
 	</version>
 

@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
-	<config-name>bootstrap</config-name><!-- used to resolve dependency -->
+	<config-name>zk-bootstrap</config-name><!-- used to resolve dependency -->
 	<!--
 	<depends>zk</depends>
 	-->
 	
   	<version>
 		<version-class>org.zkoss.addons.bootstrap.Version</version-class>
-		<version-uid>0.0.1-SNAPSHOT</version-uid>
+		<version-uid>1.0.0</version-uid>
 	</version>
-
-	<!--
-	<listener>
-		<listener-class>org.zkoss.addons.bootstrap.</listener-class>
-	</listener>
-	
-	<library-property>
-		<name></name>
-		<value>org.zkoss.addons.bootstrap.</value>
-	</library-property>
-	-->
 </zk>
