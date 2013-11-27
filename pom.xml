@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.zkoss.addons</groupId>
 	<artifactId>zk-bootstrap</artifactId>
-	<version>0.8.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<properties>
-		<zk.version>7.0.0.FL.20131122</zk.version>
+		<zk.version>7.0.0</zk.version>
 		<commons-io>1.3.1</commons-io>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
-		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
+		<packname>-${project.version}-${maven.build.timestamp}</packname>
 	</properties>
 	<packaging>jar</packaging>
 	<name>The ZK bootstrap library</name>
