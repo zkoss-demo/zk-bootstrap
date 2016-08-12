@@ -1,3 +1,8 @@
+zk-bootstrap 1.0.1
+* Features:
+* Bugs:
+  #3: navbar onSelect stops working properly with bootstap addon
+* Upgrade Notes:
 	--------
 zk-bootstrap 1.0.0
 * Features:
