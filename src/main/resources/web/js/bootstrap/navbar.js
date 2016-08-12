@@ -104,9 +104,8 @@ zk.override(zkmax.nav.Navitem.prototype, _navitem, {
 		if (this._inBSMold()) {
 			if (this._disabled)
 				return;
-			if (this.isTopmost())
-				this.getNavbar().setSelectedItem(this);
-			else {
+			this.getNavbar().setSelectedItem(this);
+			if (!this.isTopmost()) {
 				var self = this;
 				setTimeout(function () {
 					if (self.desktop && self.parent)
