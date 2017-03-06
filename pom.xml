@@ -5,7 +5,7 @@
 	<artifactId>zk-bootstrap</artifactId>
 	<version>1.0.1-FL</version>
 	<properties>
-		<zk.version>7.0.0</zk.version>
+		<zk.version>8.0.4.2-Eval</zk.version>
 		<commons-io>1.3.1</commons-io>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 		<packname>-${project.version}-${maven.build.timestamp}</packname>
@@ -53,14 +53,19 @@
 		</dependency>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
-			<artifactId>zkex</artifactId>
+			<artifactId>zkmax</artifactId>
 			<version>${zk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
-			<artifactId>zkmax</artifactId>
+			<artifactId>zuti</artifactId>
 			<version>${zk.version}</version>
-		</dependency>
+		</dependency>	
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zkplus</artifactId>
+			<version>${zk.version}</version>
+		</dependency>			
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
@@ -71,8 +76,7 @@
 		<dependency>
 			<groupId>org.zkoss.theme</groupId>
 			<artifactId>breeze</artifactId>
-			<version>${zk.version}</version>
-			<optional>true</optional>
+			<version>5.0.11</version>
 		</dependency>
 		 -->
 	</dependencies>
