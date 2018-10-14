@@ -7,6 +7,6 @@
 	
   	<version>
 		<version-class>org.zkoss.addons.bootstrap.Version</version-class>
-		<version-uid>1.0.1-FL</version-uid>
+		<version-uid>2.0</version-uid>
 	</version>
 </zk>
