@@ -1,16 +1,16 @@
 <?page title="ZK Theme with Bootstrap 3"?>
-<?link rel="stylesheet" type="text/css"	href="/bootstrap/v3/bootstrap/themes/bootstrap-${param.theme}.min.css" if="${not empty param.theme}"?>
-<?link rel="stylesheet" type="text/css"	href="/bootstrap/v3/bootstrap/themes/bootstrap-default.min.css" if="${empty param.theme}"?>
-<?link rel="stylesheet" type="text/css"	href="/bootstrap/v3/assets/css/docs.css" ?>
-<?link rel="stylesheet" type="text/css"	href="/bootstrap/v3/assets/css/pygments-manni.css" ?>
-<?script src="/bootstrap/v3/assets/js/html5shiv.js" if="${zk.ie < 9}" ?>
-<?script src="/bootstrap/v3/assets/js/respond.min.js" if="${zk.ie < 9}"?>
+<?link rel="stylesheet" type="text/css"	href="/bootstrap/v4/bootstrap/themes/bootstrap-${param.theme}.min.css" if="${not empty param.theme}"?>
+<?link rel="stylesheet" type="text/css"	href="/bootstrap/v4/bootstrap/themes/bootstrap-default.min.css" if="${empty param.theme}"?>
+<?link rel="stylesheet" type="text/css"	href="/bootstrap/v4/assets/css/docs.css" ?>
+<?link rel="stylesheet" type="text/css"	href="/bootstrap/v4/assets/css/pygments-manni.css" ?>
+<?script src="/bootstrap/v4/assets/js/html5shiv.js" if="${zk.ie < 9}" ?>
+<?script src="/bootstrap/v4/assets/js/respond.min.js" if="${zk.ie < 9}"?>
   
 <zk xmlns:w="client" xmlns:n="native">
 
 <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
   <div class="container">
-  	<a href="" class="navbar-brand">ZK 7 with Bootstrap 3</a>
+  	<a href="" class="navbar-brand">ZK 8.5 with Bootstrap 4</a>
     <navbar zclass="none" sclass="navbar-collapse">
     	<navitem label="Getting started" onClick='Clients.showNotification("Not implemented yet")'/>
     	<navitem label="CSS" onClick='Clients.showNotification("Not implemented yet")'/>
